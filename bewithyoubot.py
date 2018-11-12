@@ -3,21 +3,16 @@
 """
 TODO haha funny joke
 """
-from __future__ import print_function
 import argparse
 import datetime
-import inflect
 import sys
-import twitter  # pip install twitter
 import webbrowser
+
+import inflect
+import twitter  # pip install twitter
 import yaml  # pip install pyyaml
 
 # from pprint import pprint
-
-
-# cmd.exe cannot do Unicode so encode first
-def print_it(text):
-    print(text.encode("utf-8"))
 
 
 def timestamp():
@@ -64,7 +59,7 @@ def tweet_it(string, credentials, image=None):
     )
     t = twitter.Twitter(auth=auth)
 
-    print_it("TWEETING THIS:\n" + string)
+    print("TWEETING THIS:\n" + string)
 
     if args.test:
         print("(Test mode, not actually tweeting)")
