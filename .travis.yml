@@ -24,4 +24,4 @@ script:
 
  # Test run
  - python bewithyoubot.py --help
- - python bewithyoubot.py --test
+ - python bewithyoubot.py --test --yaml bewithyoubot_example.yaml
