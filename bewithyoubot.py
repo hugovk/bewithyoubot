@@ -109,7 +109,7 @@ def thingy():
     p = inflect.engine()
     dayth = p.ordinal(p.number_to_words(day_number))  # fourth
 
-    tweet = "{0} the {1} be with you".format(month, dayth)
+    tweet = "{} the {} be with you".format(month, dayth)
     return tweet
 
 
